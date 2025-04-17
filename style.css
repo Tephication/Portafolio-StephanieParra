@@ -1,0 +1,336 @@
+/* ESTILOS PARA EL NAVBAR*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: #661717;
+    padding: 10px 20px 10px 30px;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li a {
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #8d7754;
+}
+
+/* ESTILOS PARA EL INICIO */
+
+body {
+    font-family: 'Manrope';
+}
+
+h1 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #471d1d;
+    font-style:normal;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 2rem;
+    color: #690e07;
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+
+.contenedor {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 100px;
+    margin-right: 180px;
+    padding-top: 30px;
+    font-size: large;
+    text-align: justify;
+}
+
+#Foto-animada {
+    height: 300px;
+    border-radius: 40%;
+}
+
+.Inicio {
+    padding-top: 2rem;
+    padding-bottom: 4rem;    
+    background-color: #e4d5bc;
+}
+
+.linkedin-icon {
+    font-size: 2rem;
+    color: #0A66C2; /* Color de LinkedIn */
+    text-decoration: none;
+    align-self: flex-start; /* alinea el icono de LinkedIn a la izquierda del texto */
+    transition: transform 0.2s ease;
+  }
+
+.linkedin-icon:hover {
+    transform: scale(1.2);
+    color: #004182; /* Color más oscuro al pasar el mouse*/
+ }
+
+.github-icon {
+    font-size: 1.8rem;
+    color: #171515; /* color de GitHub */
+    text-decoration: none;
+    align-self: flex-start;
+    transition: transform 0.2s ease;
+    margin-top: 0.2rem;
+  }
+  
+.github-icon:hover {
+    transform: scale(1.2);
+    color: #000000; /* Color más oscuro al pasar el mouse*/
+  }
+
+/* ESTILOS PARA LA SECCIÓN DE ACERCA DE MI */
+.Acerca-de-mi {
+    padding-top: 2rem;
+    padding-bottom: 4rem;    
+    background-color: #eeedeb;
+}
+
+.contenedor-acerca {
+    display: flex;
+    flex-direction: row-reverse; /* Foto a la derecha */
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap; /* Por si el ancho es pequeño en celular */
+    padding: 2.5rem;
+    margin-right: 3rem;
+}
+
+.texto-acerca {
+    flex: 1;
+    text-align: justify;
+    font-size: large;
+}
+
+#Foto-personal {
+    height: 450px;
+    border-radius: 40%;
+}
+
+.Lsobre-mi {
+    list-style: none;
+   
+}
+
+
+/* ESTILOS PARA LA SECCIÓN DEL PORTAFOLIO */
+.Portafolio {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-color: #e4d5bc;
+    text-align: center;
+}
+  
+    
+  /* Contenedor de todas las cards */
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Estilos para cada card individual */
+  .product-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Animación al pasar el cursor (se mueve de arriba a abajo) */
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Imagen dentro de la card */
+  .product-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Título de cada proyecto */
+  .product-card h2 {
+    font-size: 1.4rem;
+    color: #440404;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+  }
+  
+  /* Descripción de cada proyecto */
+  .product-card p {
+    font-size: 0.95rem;
+    color: #000000;
+    margin:0 0 1rem 0;
+    text-align: justify;
+  }
+  
+  /* Enlace al repositorio del proyecto */
+  .product-card a {
+    text-decoration: none;
+    background-color: #470707;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    align-self: center;
+    transition: background-color 0.3s ease; /* Se aclara al pasar el mouse*/
+  }
+  
+  .product-card a:hover {
+    background-color: #882e2e;
+  }
+
+  .Resume {
+    padding-top: 2rem;
+    padding-bottom: 4rem;    
+    background-color: #eeedeb;
+  }
+
+  .contenedor-logros {
+    margin-left: 2rem;
+  }
+
+  .contenedor-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1.5rem;
+    padding: 10px;
+  }
+  
+  .contenedor-skills img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .contenedor-skills img:hover {
+    transform: scale(1.2);
+  }
+
+.L-logros {
+    list-style: none;
+}
+
+.subelementos ol {
+    list-style-type: none;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;    
+}
+
+/* ESTILOS PARA LA SECCIÓN DE CONTACTO */
+
+.Contacto {
+    padding-top: 2rem;    
+    padding-bottom: 4rem;    
+    background-color: #e4d5bc;
+}
+
+.tabla-contacto {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .tabla-contacto td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #a09a9a;
+    border-top: 1px solid #a09a9a;
+    border-left: 1px solid #a09a9a;
+    border-right: 1px solid #a09a9a;
+    vertical-align: top;
+  }
+  
+  .tabla-contacto tr:last-child td {
+    border-bottom: 1px solid #a09a9a;
+  }
+  
+  .tabla-contacto i {
+    margin-right: 8px;
+    color: #2c3e50; /* Color ícono */
+  }
+  
+  .tabla-contacto a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  
+  
+  .github-icon2 i {
+    color: #171515; /* Negro GitHub */
+  }
+  
+  .linkedin-icon2 i {
+    color: #0077B5; /* Azul LinkedIn */
+  }
+  
+  .instagram-icon i {
+    color: #E1306C; /* Rosa Instagram */
+  }
+  
+/* ESTILOS PARA EL FOOTER*/
+
+.footer {
+    background-color: #0a0101;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+  
+  .footer-redes {
+    margin-top: 10px;
+  }
+  
+  .footer-redes a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-redes a:hover {
+    color: #00bcd4; /* Puedes cambiar este color al que más te guste */
+  }
+ 
