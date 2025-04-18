@@ -1,20 +1,22 @@
 /* ESTILOS PARA EL NAVBAR*/
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: right;
+    justify-content: center;    
     background-color: #661717;
-    padding: 10px 20px 10px 30px;
-    position:sticky;
+    padding: 10px 0;
+    width: 100%;
+    position:fixed;
     top: 0;
     z-index: 1000;
 }
 
 .menu {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     gap: 30px;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .menu li a {
