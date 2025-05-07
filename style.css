@@ -1,8 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ESTILOS PARA EL NAVBAR*/
 .navbar {
     display: flex;
     justify-content: center;    
     background-color: #661717;
+    height: 3rem;
     padding: 10px 0;
     width: 100%;
     position:fixed;
@@ -34,7 +41,8 @@
 /* ESTILOS PARA EL INICIO */
 
 body {
-    font-family: 'Manrope';
+  padding-top: 2rem;
+  font-family: 'Manrope';
 }
 
 h1 {
@@ -181,6 +189,7 @@ h2 {
     height: auto;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+    height: 130px;
   }
   
   /* Título de cada proyecto */
@@ -333,6 +342,6 @@ h2 {
   }
   
   .footer-redes a:hover {
-    color: #00bcd4; /* Puedes cambiar este color al que más te guste */
+    color: #c78181; 
   }
  
