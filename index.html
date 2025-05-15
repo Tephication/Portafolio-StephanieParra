@@ -14,6 +14,11 @@
 <body>
     <header>
         <nav class="navbar">
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="menu">
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#Acerca-de-mi">Acerca de mi</a></li>
@@ -31,7 +36,8 @@
             <img src="./img/TefaCartoon.jpg" alt="Stephanie Parra Torres animada" id="Foto-animada">
 
             <div class="texto-inicio">
-                <p id="descripcion-inicio"> Desarrolladora Jr Full Stack Java y profesional en Geología y , apasionada por el
+                <p id="descripcion-inicio"> Desarrolladora Jr Full Stack Java y profesional en Geología y , apasionada
+                    por el
                     aprendizaje. Siempre estoy buscando nuevos retos para crecer y crear cosas increíbles.
                 </p> <br>
                 <p id="conoceme-inicio">Conóceme:
@@ -53,9 +59,17 @@
             <img src="./img/Stephanie.jpeg" alt="Stephanie Parra Torres" id="Foto-personal">
             <div class="texto-acerca">
                 <ul class="Lsobre-mi">
-                    <li>Soy una persona entusiasta y apasionada por el aprendizaje continuo. En mi búsqueda de nuevos conocimientos descubrí en la tecnología —y, en particular, en el desarrollo de software— un campo lleno de retos y oportunidades para crecer tanto personal como profesionalmente. Mi objetivo es fortalecer mis competencias en diversos lenguajes de programación y convertirme en una desarrolladora integral, con las habilidades necesarias para asumir mi primer reto profesional en esta industria.</li>
+                    <li>Soy una persona entusiasta y apasionada por el aprendizaje continuo. En mi búsqueda de nuevos
+                        conocimientos descubrí en la tecnología —y, en particular, en el desarrollo de software— un
+                        campo lleno de retos y oportunidades para crecer tanto personal como profesionalmente. Mi
+                        objetivo es fortalecer mis competencias en diversos lenguajes de programación y convertirme en
+                        una desarrolladora integral, con las habilidades necesarias para asumir mi primer reto
+                        profesional en esta industria.</li>
                     <br>
-                    <li>Hace poco inicié mi camino en el mundo del desarrollo, comenzando de forma autodidacta con Python. Actualmente, formo parte del programa de formación de <strong>Generation Colombia</strong>, donde estoy consolidando mis conocimientos y dando un paso firme y oficial hacia el fascinante mundo del desarrollo web.</li>
+                    <li>Hace poco inicié mi camino en el mundo del desarrollo, comenzando de forma autodidacta con
+                        Python. Actualmente, formo parte del programa de formación de <strong>Generation
+                            Colombia</strong>, donde estoy consolidando mis conocimientos y dando un paso firme y
+                        oficial hacia el fascinante mundo del desarrollo web.</li>
                 </ul>
             </div>
         </div>
@@ -129,14 +143,11 @@
                 <ol class="subelementos"> <br>
                     <li> <a href="./CVStephanie Parra.pdf" download class="boton-cv">
                             <i class="fas fa-download"></i> Descargar CV
-                            </a>
+                        </a>
                     </li>
-                    
                 </ol>
             </ul>
-
         </div>
-
 
         <h2>Skills</h2>
         <div class="contenedor-skills">
@@ -154,27 +165,61 @@
 
     <section id="Contacto" class="Contacto">
         <h1>Contáctame</h1>
-        <table class="tabla-contacto">
-            <tr>
-                <td> <strong>Celular</strong></td>
-                <td> <i class="fas fa-phone-alt"></i> +57 3214456700</td>
-            </tr>
-            <tr>
-                <td> <strong> Correo</strong></td>
-                <td> <i class="fas fa-envelope"></i> stephaptorres@gmail.com</td>
-            </tr>
-            <tr>
-                <td><strong>Redes Sociales </strong></td>
-                <td><a href="https://github.com/Tephication" target="_blank" class="github-icon2">
-                        <i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/stephanie-parra-torres-desarrolladora/" target="_blank"
-                        class="linkedin-icon2"> <i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/tephication" target="_blank" class="instagram-icon">
-                        <i class="fab fa-instagram"></i> </a>
-                </td>
-            </tr>
-        </table>
+        <div class="contacto-container-single">
+            <div class="contacto-card">
+                <div class="info-section">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+57 3214456700</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>stephaptorres@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bogotá, Colombia</p>
+                    </div>
+                    <div class="redes-contacto">
+                        <a href="https://github.com/Tephication" target="_blank" class="github-icon2">
+                            <i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/stephanie-parra-torres-desarrolladora/" target="_blank"
+                            class="linkedin-icon2"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/tephication" target="_blank" class="instagram-icon">
+                            <i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
 
+                <div class="form-section">
+                    <h2>Envíame un mensaje</h2>
+                    <form id="contactForm" action="https://formspree.io/f/xnndlbak" method="POST"
+                        class="formulario-contacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="message" rows="5" required></textarea>
+                        </div>
+                        <div id="form-status"></div>
+                        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                    </form>
+                    <p style="margin-top: 20px; text-align: center; font-style: italic;">
+                        También puedes enviarme un email directamente a:
+                        <a href="mailto:stephaptorres@gmail.com">stephaptorres@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -186,6 +231,10 @@
             <a href="https://www.instagram.com/tephication" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
+
+    <script src="script.js"> </script>
+
+    
 
 
 </body>
